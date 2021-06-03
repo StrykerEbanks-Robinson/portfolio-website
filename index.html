@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Online Portfolio | Stryker Ebanks</title>
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    
+
+    <!-- --- --- Header --- --- -->
+
+    <!-- Use 'row' class for header & sub-section divs so the different elements can be floated alongside each other -->
+    <header class='row'>
+
+      <!-- --- Logo --- -->
+      <div class='logo'>
+        <img alt='Stryker Ebanks logo.' src='images/logo/logo.png' height='90px' />
+      </div>
+      
+      <!-- --- Name & pronouns --- -->
+      <div class='name'>
+        <h1>Stryker Ebanks</h1>
+        <div>
+          <h2>(he/him)</h2>
+        </div>
+      </div>
+
+      <!-- --- Nav --- -->
+      <nav>
+        <a href='#about'>About Me</a>
+        <a href='#projects'>Project Samples</a>
+        <a href='#contact'>Contact Me</a>
+      </nav>
+    </header>
+   
+
+    <!-- --- --- Main --- --- -->
+    <main>
+
+      <!-- --- About Me --- -->     
+      <section id='about'>
+
+        <h2 class='text-center'>Hello!</h2>
+
+        <div class='row'>
+          <img alt='Headshot of Stryker' src='images/about/headshot.jpeg' class='image-left' height='400px'/>
+          
+          <!-- Some of the content containers need to be size md because the images are so large that an lg container would be floated underneath the image instead of next to it -->
+          <div class='content md float-left'>
+            <p>My name's Stryker, and I'm a Software Engineer in-training! I'm from the Cayman Islands, but I'm currently living and working in Tampa, Florida, while I attend <a href='https://www.thinkful.com/bootcamp/web-development/' target='\_blank'>Thinkful's</a> immersive Software Engineering Coding Bootcamp.</p>
+
+            <h3>How I Got Here</h3>
+            <p>I graduated from the University of South Florida in 2019 with a bachelor's in Mathematics and World Languages & Cultures before my fianc&eacute;, Sarah, and I moved to Spain to work as North American Language & Culture Ambassadors in Spanish public schools for a year. After returning to Florida mid-pandemic, I rediscovered my love for coding and building programs, and I decided to start a new career journey into software engineering!</p>
+          </div>
+        </div>
+
+        <div class='row'>
+          <img alt='Sarah and me at Alcázar de Jerez de la Frontera, Spain' src='images/about/alcazar-de-jerez.jpg' class='image-right' height='250px' />
+
+          <div class='content md float-left'>
+            <h3>A few of my favourite things...</h3>
+            <ul>
+              <li>Using coding to build games that I can play with my fianc&eacute</li>
+              <li>Working on teams with people who help me to push myself</li>
+              <li>Singing, playing the flute, and playing the piano</li>
+              <li>Cooking and trying out new recipes</li>
+              <li>Travelling and seeing new places</li>
+            </ul>
+          </div>
+        </div>
+        
+      </section>
+
+      <hr>
+
+
+      <!-- --- Project Samples --- -->
+      <section id='projects'>
+
+        <h2 class='text-center'>Project Samples</h2>
+        <p>Here are some examples of projects that I've worked on! The first language that I learned was Python, so most of my finished projects were built using that. However, I'm currently also learning HTML, CSS, JavaScript, and C++, so I hope to soon add some more finished projects to my repertoire in those languages, too!</p>
+
+        <!-- I want the hr's in the Projects section to be different than the rest of the hr's -->
+        <hr>
+
+        <!-- --- Project: Tic Tac Toe --- -->
+
+        <div class='row'>
+          <img alt='The tic-tac-toe game being played via the Terminal' src='images/projects/tic-tac-toe.png' class='image-left' height='200px' />
+
+          <div class='content lg float-left'>
+            <h3>Tic-Tac-Toe (AI)</h3>
+            <p>This was one of the first projects that I completed. Using Python, I built a Tic-Tac-Toe game where you can play against the computer or another human. If you pick the computer, you can also choose from three levels of difficulty, where Medium and Hard use a minimax algorithm so that the computer can play intelligently. Feel free to check out the code for my tic-tac-toe game on my <a href='https://github.com/StrykerEbanks/tic-tac-toe' target='\_blank'>GitHub</a>!</p>
+          </div>
+        </div>
+
+        <hr>
+        
+        <!-- --- Project: Minesweeper --- -->
+        <div class='row'>
+          <img alt='The minesweeper game being played via the terminal' src='images/projects/minesweeper.png' class='image-right' height='200px' />
+
+          <div class='content lg float-right'>
+            <h3 class='text-right'>Minesweeper</h3>
+            <p>Since my fianc&eacute; really enjoys minesweeper, I built her a minesweeper game as one of my first Python projects. While the minimax algorithm in my tic-tac-toe project helped me to better understand recursive functions, this minesweeper project gave me a much firmer grasp of Python classes and the strengths of OOP. You can take a look under the hood of this project <a href='https://github.com/StrykerEbanks/minesweeper' target='\_blank'>here</a>!</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- --- Project: This website --- -->
+        <div class='row'>
+          <img alt='A screenshot image of this website itself' src='images/projects/screenshot-of-website.png' class='image-left' height='200px' />
+          
+          <div class='content md float-left'>
+            <h3>This website</h3>
+            <p>As an emerging web developer, I built this portfolio website as my first from-scratch web project to practice my new skills. Let me know what you think&mdash;I'd love to hear your feedback! You can check out the section below for ways to get in touch with me...</p>
+          </div>
+        </div>
+
+      </section>
+
+      <hr>
+
+      <!-- --- Contact --- -->
+      <section id='contact'>
+        <h2 class='text-center'>Contact Me</h2>
+
+        <p>I'd love to hear from you! Feel free to <a href='mailto:william_stryker@hotmail.com'>send me an email</a> or even check out my:</p>
+        <ol>
+          <li><a href='https://www.linkedin.com/in/strykerebanks/' target='\_blank'>LinkedIn</a></li>
+          <li><a href='https://github.com/StrykerEbanks' target='\_blank'>GitHub</a></li>
+        </ol>
+      </section>
+
+      <!-- --- Closing message --- --> 
+
+      <!-- Help w/ emoji code from https://www.w3schools.com/charsets/ref_emoji_smileys.asp -->
+      <h3 class='text-center'>See you soon! &#128512;</h3>
+
+    </main>
+
+    <footer>
+      <div class='text-center'>
+        <p>&copy; Stryker Ebanks 2021</p>
+      </div>
+    </footer>
+
+    <script src='script.js'></script>
+  </body>
+
+</html>
