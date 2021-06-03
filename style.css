@@ -1,0 +1,242 @@
+/* Merienda font for headers h1-h3 */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* --- --- --- Body, general classes, & shared styles --- --- --- */
+
+
+/* Container for making header/sections into rows so text & images can be floated next to each other */
+.row {
+  width: 100%;
+  display: table;
+}
+
+/* Classes for aligning texts right or center (no left since left would just be leaving text as default) */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Classes for floating images & p containers left/right */
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+body { 
+  background-image: url("images/background/beach.jpg");
+  /* Code to set a background image that doesn't scroll when the rest of the page scrolls. Help from https://www.codegrepper.com/code-examples/css/how+to+stop+scrolling+background+image+in+html */
+  background-position: center;
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header,
+footer {
+  width: 100%;
+  margin: 0;
+  padding-top: 10px;
+  background: #215191;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Merienda", cursive;
+}
+
+p,
+ol,
+ul,
+li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #215191;
+}
+
+p {
+  padding: 10px;
+  /* if margin != 0, the different <p> paragraphs space apart further than I want */ 
+  margin: 0;
+  /* Indent each paragraph in main. Help from https://www.bitdegree.org/learn/css-text#text-indent */
+  text-indent: 35px;
+}
+
+ol,
+ul {
+  padding: 10px;
+  margin: 0 30px;
+}
+
+li {
+  padding: 5px;
+}
+
+
+/* --- --- Header --- --- */
+
+
+.logo {
+  float: left;
+  width: 12.5%;
+  height: 100px;
+  text-align: right;
+  margin: 0;
+}
+
+.name {
+  float: left;
+  width: auto;
+  color: #F6F7F6;
+  padding: 5px 0 5px 30px;
+  margin: 0;
+}
+
+header {
+  border-bottom: 3px solid #1c4170;
+}
+
+header h1 {
+  font-size: 50px;
+  text-align: left;
+  padding-top: 5px;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+
+/* --- Nav --- */
+
+
+header nav {
+  float: right;
+  width: auto;
+  height: 100px;
+  padding-top: 35px;
+  margin-right: 30px;
+}
+
+header nav a {
+  font-size: 25px;
+  font-family: 'Georgia', sans-serif;
+  text-align: right;
+  padding: 0 20px 35px 20px;
+}
+
+header nav a:link { color: #FFFF88}
+header nav a:visited { color: #FFFFBB}
+header nav a:hover { color: #FFFFE4}
+header nav a:active { color: #FFFF00}
+
+
+/* --- --- Main --- --- */
+
+
+/* Give an image a border, float it LEFT, and give it a margin on all sides except for the side against the edge of the container */
+.image-left {
+  float: left;
+  border: 4px outset #518cd0;
+  margin: 20px 20px 20px 0;
+}
+
+/* " ", but floated RIGHT */
+.image-right {
+  float: right;
+  border: 4px outset #518cd0;
+  margin:20px 0 20px 20px;
+}
+
+/* Container for p elements*/
+.content {
+  text-align: justify;
+  width: 55%;
+}
+
+/* lg & md class for sizing the p containers that use 'content' class */
+.lg {
+  width: 70%;
+}
+
+.md {
+  width: 55%;
+}
+
+main {
+  width: 80%;
+  margin: 30px 10%;
+  background-color: #F7F1C5;
+  border: 3px solid #2D70C8;
+  padding: 15px;
+}
+
+section {
+  width: 80%;
+  margin: 0 10%;
+  display: table;
+}
+
+main h2 {
+  color: #1c4170;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+main h3 {
+  color: #1c4170;
+  font-size: 25px;
+  /* top margin = 20px so that there's space between p & h3 elements, & also so that the tops of the Project sub-headings will be in-line with the tops of the Project images */
+  margin: 20px 0 0 0;
+}
+
+/* Change link colors in main, except for a:visited, since I like how that one looks with the current font color */
+main a:link {color: #104284}
+main a:hover {color: #70b9c8}
+main a:active {color: #00ffff}
+
+/* I want to use a different hr for main > hr than for main > section > hr, but the border & margin will be the same for both so */
+hr {
+  border: none;
+  margin: 20px 0;
+}
+
+main > hr {
+  background-image: url('images/hr/wave.png');
+  /* wave.png is 6px high, so make height: 6px */
+  height: 6px;
+}
+
+main > section > hr {
+  background-image: url('images/hr/pacman.png');
+  /* pacman.png is 20px high, so make height: 20px */
+  height: 20px;
+}
+
+
+/* --- --- Footer --- --- */
+
+
+footer {
+  height: 65px;
+  border-top: 3px solid #1c4170;
+}
+
+footer p {
+  color: #fff;
+  font-size: 17px;
+}
